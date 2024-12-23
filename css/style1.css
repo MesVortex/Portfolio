@@ -21,8 +21,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url("../img/bgImage.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/bgImage.jpg") no-repeat center center/cover;
   color: var(--text-color); /* Keeps your text readable */
   background-attachment: fixed; /* Ensures the background stays static while scrolling */
   height: 100%;
@@ -258,7 +258,7 @@ header.sticky {
   font-weight: 500;
   letter-spacing: 1px;
 }
-.row p{
+.row p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 30px;
@@ -464,6 +464,12 @@ form textarea{
   }
 }
 
+@media screen and (max-width: 650px) {
+  .back-gif {
+    display: none;
+  }
+}
+
 img {
   height: 150px;
   width: 150px;
@@ -528,7 +534,7 @@ img {
   transform: translateX(-50%);
   height: 4px;
   width: 100px;
-  background-color: #eb4a4a;
+  background-color: #002ebc;
   border-radius: 2px;
 }
 
@@ -553,6 +559,14 @@ img {
   gap: 1.5rem;
   padding: 1rem 80px;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .Tcontainer {
+    gap: 0;
+    padding: 0;
+    padding-inline: 0;
+  }
 }
 
 .skill-box {
@@ -587,7 +601,7 @@ img {
   width: 0;
   height: 4px;
   border-radius: 2px 0 0 2px;
-  background-color: #eb4a4a;
+  background-color: #002ebc;
   transition: 0.5s;
 }
 
@@ -599,7 +613,7 @@ img {
   width: 0;
   height: 4px;
   border-radius: 0 2px 2px 0;
-  background-color: #eb4a4a;
+  background-color: #002ebc;
   transition: 0.5s;
 }
 
